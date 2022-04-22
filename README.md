@@ -68,7 +68,13 @@ pip install -r requirements.txt
 Po poprawnej instalacji należy uruchomić server django poleceniem:
 
 ```shell
-python mamange.py runserver
+python manage.py runserver
+```
+
+Można już wejść na adres i zalogować się jako admin.
+
+```sh
+localhost:8000/admin
 ```
 
 ## Uruchomienie frontendu
@@ -95,7 +101,7 @@ Jeśli wyświetli się panel logowania, oznacza to, że możemy zalogwać się d
 
 ### Frontend
 
-Po wejści na adres:
+Po wejściu na adres:
 
 ```sh
 localhost/frontend
