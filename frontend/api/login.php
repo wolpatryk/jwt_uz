@@ -42,5 +42,5 @@ try {
 echo ("<br/>");
 echo ("<br/>");
 echo ("<br/>");
-echo ('<a href="http://localhost/jwt/frontend/">home</a>');
+echo ('<a href="http://localhost/dev/jwt_uz/frontend">home</a>');
 restore_error_handler();
