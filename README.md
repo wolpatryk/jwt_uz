@@ -124,4 +124,4 @@ Jest widoczny formularz logowania i rejestracji.
 
 ## Dodatki
 
-Dodakwo został załączony plik **django_app.ipynb**, który pokazuje sposób autoryzacji się użytkownika przez JWT oraz wyświetla dostępne zasoby, które są w serwisie.
+Dodakwo został załączony plik **django_app.ipynb**, który pokazuje sposób autoryzacji się użytkownika przez JWT oraz wyświetla dostępne zasoby, które są w serwisie. Aby uruchomić notatnik zalecane jest środowisko **Jupyter Notebook** lub **Jupyter Lab**. W systemie windows można wykorzystać aplikację **Anaconda**.
