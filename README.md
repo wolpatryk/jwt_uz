@@ -128,6 +128,12 @@ Jest widoczny formularz logowania i rejestracji.
 `localhost:8000`/api/v1/products<br/>
 `localhost:8000`/api/v1/products/1<br/>
 
+## Konfiguracja JWT
+
+W folderze **EcommerceAPI** należy otworzyć plik **settings.py**. Na podstawie dokumentacji odpowiednio skonfigurować JWT na własne potrzeby.
+
+- https://django-rest-framework-simplejwt.readthedocs.io/en/latest/settings.html#jwk-url
+
 ## Dodatki
 
 Dodakwo został załączony plik **django_app.ipynb**, który pokazuje sposób autoryzacji się użytkownika przez JWT oraz wyświetla dostępne zasoby, które są w serwisie. Aby uruchomić notatnik zalecane jest środowisko **Jupyter Notebook** lub **Jupyter Lab**. W systemie windows można wykorzystać aplikację **Anaconda**.
