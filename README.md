@@ -132,7 +132,7 @@ Jest widoczny formularz logowania i rejestracji.
 
 W folderze **EcommerceAPI** należy otworzyć plik **settings.py**. Na podstawie dokumentacji odpowiednio skonfigurować JWT na własne potrzeby.
 
-- https://django-rest-framework-simplejwt.readthedocs.io/en/latest/settings.html#jwk-url
+- https://django-rest-framework-simplejwt.readthedocs.io/en/latest/settings.html#settings
 
 ## Dodatki
 
