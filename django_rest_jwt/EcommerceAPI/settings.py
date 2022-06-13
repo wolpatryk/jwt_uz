@@ -56,7 +56,12 @@ kd3qqGElvW/VDL5AaWTg0nLVkjRo9z+40RQzuVaE8AkAFmxZzow3x+VJYKdjykkJ
 cKWTjpBP2dPwVZ4WWC+9aGVd+Gyn1o0CLelf4rEjGoXbAAEgAqeGUxrcIlbjXfbc
 mwIDAQAB
 -----END PUBLIC KEY-----"""
-SECRET_KEY_RSA256= """-----BEGIN PRIVATE KEY-----
+# przykładowa ścieżka czytana z pliku na pendrive
+# D:/pendrive/klucz.txt/.pub
+# with open("./ścieżka/do/pliku/z/kluczem.txt") as f:
+# PUBLIC_KEY_RSA256_FROM_FILE = f.read()
+
+SECRET_KEY_RSA256 = """-----BEGIN PRIVATE KEY-----
 MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC7VJTUt9Us8cKj
 MzEfYyjiWA4R4/M2bS1GB4t7NXp98C3SC6dVMvDuictGeurT8jNbvJZHtCSuYEvu
 NMoSfm76oqFvAp8Gy0iz5sxjZmSnXyCdPEovGhLa0VzMaQ8s+CLOyS56YyCFGeJZ
@@ -85,15 +90,21 @@ TQrKhArgLXX4v3CddjfTRJkFWDbE/CkvKZNOrcf1nhaGCPspRJj2KUkj1Fhl9Cnc
 dn/RsYEONbwQSjIfMPkvxF+8HQ==
 -----END PRIVATE KEY-----"""
 
+# konfiguracja JWT z parametrami
+# https://django-rest-framework-simplejwt.readthedocs.io/en/latest/settings.html#settings
+
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
     'ALGORITHM': 'RS256',
     'SIGNING_KEY': SECRET_KEY_RSA256,
     'VERIFYING_KEY': PUBLIC_KEY_RSA256,
+    # ładownie kluczy do ustawień z plików.
+    # 'SIGNING_KEY': SECRET_KEY_RSA256,
+    # 'VERIFYING_KEY': PUBLIC_KEY_RSA256_FROM_FILE,
 }
 
 #################################################################
-# BEGIN RSA CONFIG
+# END RSA CONFIG
 #################################################################
 
 REST_FRAMEWORK = {
