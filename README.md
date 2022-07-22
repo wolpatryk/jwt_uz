@@ -24,6 +24,10 @@ W katalogu **frontend** znajduję się prosty formularz, który pozwala zalogowa
 
 ## Wymagania techniczne
 
+Nalezy zainstalować Pythona na system windows
+
+- https://tutorial.djangogirls.org/pl/python_installation/
+
 Wymagane narzędzia do uruchomienia projektu:
 
 - Python w wersji minimum 3.9.5
